@@ -6,7 +6,7 @@ from rest_framework import status
 class TestApi(TestCase):
     def setUp(self):
         self.client = APIClient()
-        self.uri = "http://127.0.0.1:8000/api/values/"
+        self.uri = "http://127.0.0.1:8000/api/values"
 
     def test_get_all(self):
         response = self.client.get(self.uri)
